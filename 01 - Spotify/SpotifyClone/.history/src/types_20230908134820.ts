@@ -5,13 +5,11 @@ export type Track = {
   album: Album;
   artists: Artist[];
 };
-
 export type Album = {
   id: string;
   name: string;
   images: Image[];
 };
-
 export type Artist = {
   id: string;
   name: string;
