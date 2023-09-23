@@ -1,5 +1,4 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Link, Tabs } from 'expo-router';
 import { Pressable, useColorScheme } from 'react-native';
 
@@ -27,7 +26,7 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Home',
-          tabBarIcon: ({ color }) => <MaterialCommunityIcons name="google-home" size={24} color="black" />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -58,7 +57,7 @@ export default function TabLayout() {
         name="favorites"
         options={{
           title: 'Favorites',
-          tabBarIcon: ({ color }) => <TabBarIcon name="heart" color={color} />,
+          tabBarIcon: ({ color }) => <MaterialCommunityIc name="google-home" color={color} />,
         }}
       />
     </Tabs>
