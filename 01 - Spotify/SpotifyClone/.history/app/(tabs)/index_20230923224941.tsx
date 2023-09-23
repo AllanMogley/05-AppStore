@@ -12,7 +12,7 @@ export default function TabOneScreen() {
     </View>
   );
 }
-
+s
 const styles = StyleSheet.create({
   container: {
     flex: 1,
